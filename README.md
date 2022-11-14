@@ -1,6 +1,10 @@
 # Elice_Final_Project
 Node.js에서 Express.js와 EJS 뷰 엔진 등을 이용한 CRUD 게시판 사이트
 
+MongoDB 접속을 위하여
+Root 경로에 .env File 생성 후
+MONGO_URI={주소} 작성 필요
+
 시간상 많은 기능을 구현하지 못 하여 아쉬움.
 추가됐으면 하는 기능
 1. 회원 탈퇴 및 회원 정보 수정기능
