@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1 class="title has-text-centered is-primary"><%= post.title %></h1>
+<div class="box mt-4" style="margin: 50px">
+    <table class="table is-fullwidth">
+        <tbody>
+            <tr>
+                <th colspan="3">
+                    <%= post.createdAt.toLocaleString('ko-KR') %>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="3">
+                    <pre><%= post.content %></pre>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/board"><button class="button mr-2 is-2">목록으로</button></a>
+    <% if (user_name == post.user_name) { %>
+        <a href="?edit=true"><button class="button is-info is-2 mr-2">수정</button></a>
+        <a href="/board/<%= post.shortId %>?delete=true"><button class="button is-danger">삭제</button></a>
+    <% } %>
+</div>
+</body>
+</html>

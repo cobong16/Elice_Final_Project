@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>회원가입</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container" style="margin-top: 100px">
+    <!-- Contact Section Heading-->
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">계정 생성</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+    </div>
+    <!-- Contact Section Form-->
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+            <form id="register" action="/register" method="post">
+                <!-- Name input-->
+                <div class="form-floating mb-3">
+                    <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name..." />
+                    <label for="name">이름</label>
+                </div>
+                <!-- Phone number input-->
+                <div class="form-floating mb-3">
+                    <input class="form-control" name="telephone" id="telephone" type="tel" placeholder="(123) 456-7890" />
+                    <label for="telephone">전화 번호</label>
+                </div>
+                <!-- Email address input-->
+                <div class="form-floating mb-3">
+                    <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com" />
+                    <label for="email">이메일 주소</label>
+                </div>
+                <!-- 비밀번호 -->
+                <div class="form-floating mb-3">
+                    <input class="form-control" name="password" id="password" type="password" placeholder="비밀번호" />
+                    <label for="password">비밀번호</label>
+                </div>
+                <!-- Submit Button-->
+                <button class="btn btn-primary btn-xl" id="submitButton" type="submit" style="margin-bottom: 100px">계정 생성</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

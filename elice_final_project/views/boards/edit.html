@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1 class="title has-text-centered is-primary">
+    <% if (!write) { %>
+        글 수정하기
+    <% } else { %>
+        새 글 등록하기
+    <% } %>
+</h1>
+<div class="box mx-6" style="margin: 50px">
+    <form action=<% if(write) { %>
+            /board
+        <% } else { %>
+            /board/<%= post.shortId %>
+        <% } %>
+        method="post">
+        <div>
+            <label class="label is-large">제목</label>
+            <div class="control">
+                <% if (write) { %>
+                    <input class="input" type="text" name="title" value="">
+                <% } else { %>
+                    <input class="input" type="text" name="title" value=<%= post.title %>>
+                <% } %>
+            </div>
+        </div>
+        <div class="mt-2">
+            <label class="label is-large">내용</label>
+            <div class="control">
+                <% if (write) { %>
+                    <textarea class="input" name="content"></textarea>
+                <% } else { %>
+                    <textarea class="input" name="content"><%= post.content %></textarea>
+                <% } %>
+            </div>
+        </div>
+        <div>
+            <button class="button is-info mt-2" type="submit">
+                <% if (write) { %>
+                    등록
+                <% } else { %>
+                    수정
+                <% } %>
+            </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
