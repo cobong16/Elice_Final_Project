@@ -12,4 +12,7 @@ MONGO_URI={주소} 작성 필요
 3. 댓글 기능
 4. 이미지 및 영상 첨부, 재생 기능
 
-![스크린샷 2022-11-15 03 09 32](https://user-images.githubusercontent.com/82963112/201734697-eb1702c4-d38b-4582-9c2b-b485f9f073dc.png)
+![스크린샷 2022-11-15 03 09 32](https://user-images.githubusercontent.com/82963112/201737775-d8522069-bf35-4b58-842f-2a3440325ffc.png)
+![스크린샷 2022-11-15 03 09 52](https://user-images.githubusercontent.com/82963112/201737783-31a00a8c-1485-4c25-b5c5-ab7843b8b409.png)
+![스크린샷 2022-11-15 03 10 42](https://user-images.githubusercontent.com/82963112/201737788-a85cab1c-2521-483b-8570-ed296c610718.png)
+![스크린샷 2022-11-15 03 10 53](https://user-images.githubusercontent.com/82963112/201737800-94569ef6-e49f-4619-b8cf-d9823a42fce5.png)
